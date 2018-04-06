@@ -10,10 +10,14 @@ body{
 
 #flag{
 display:flex;  
-justify-content:left; 
-width:100%; height:5em; \\
+height:90vh; 
   margin:none; 
   background:white;
+}
+
+div{
+	flex-basis: 200px;
+	flex-grow: 2;
 }
 
 .red{
@@ -39,8 +43,7 @@ width:100%; height:5em; \\
 }
 
 .star{
-	
-	flex: 1;
+	min-height: 85vh;
 	margin:auto;
 	margin-top: 100px;
 }
@@ -54,13 +57,15 @@ width:100%; height:5em; \\
 
 <body>
 
-<div id="flag">
+<section id="flag">
 <div class="green"></div>
-<div class="yellow"><div class="star">
-	<img src="img/green_star.svg" width="400px" >
-</div></div>
-<div class="red"></div>
+<div class="yellow">
+	<div class="star">
+		<img src="img/green_star.svg" width="400px" >
+	</div>
 </div>
+<div class="red"></div>
+</section>
 
 
 </body>

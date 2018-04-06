@@ -1,4 +1,21 @@
+@font-face {
+    font-family: 'hwt_republic_gothicoutline';
+    src: url('fonts/hwtrepublicgothicoutline-webfont.woff2') format('woff2'),
+         url('fonts/hwtrepublicgothicoutline-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 
+}
+
+
+@font-face {
+    font-family: 'hwt_republic_gothicsolid';
+    src: url('fonts/hwtrepublicgothicsolid-webfont.woff2') format('woff2'),
+         url('fonts/hwtrepublicgothicsolid-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
 
 html,
 body {
@@ -21,7 +38,7 @@ a:link    {
 }
 
 .project{
-  font-family:"helvetica";
+  font-family:'hwt_republic_gothicoutline';
   font-size: 45px;
   color:navy;
   padding: 10px;
@@ -30,20 +47,21 @@ a:link    {
   border-radius: 20px;
   height: 300px;
   width: 300px;
-  font-weight: 700;
+  font-weight: 400;
 
 }
 
 .title{
-  font-family: 'helvetica';
+  font-family:'hwt_republic_gothicoutline';
   color:green;
   padding: 20px;
   font-size: 45px;
   margin:0px;
-  font-weight: 700;
+  font-weight: 400;
 }
 
- .hovering{
+ .project:hover {
+  font-family: 'hwt_republic_gothicsolid';
   font-size: 45px;
   color:green;
   background-color: rgb(203, 145, 255);
