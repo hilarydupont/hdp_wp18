@@ -9,6 +9,8 @@ flags
 * https://hilarydupont.github.io/hdp_wp18/flag.html
 * https://hilarydupont.github.io/hdp_wp18/us_grid.html
 * https://hilarydupont.github.io/hdp_wp18/flag.html
+* https://hilarydupont.github.io/hdp_wp18/flex_flag.html
+
 
 objects
 * https://hilarydupont.github.io/hdp_wp18/digital_bits/beer.html
