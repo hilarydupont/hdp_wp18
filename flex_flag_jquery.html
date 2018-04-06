@@ -1,0 +1,85 @@
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<title>flex flag</title>
+
+<style>
+body{
+	margin:50px;
+}
+
+#flag{
+display:flex;  
+height:90vh; 
+  margin:none; 
+  background:white;
+}
+
+div{
+	flex-basis: 200px;
+	flex-grow: 2;
+}
+
+.red{
+	background:red; 
+	flex: 1 1 1px; 
+	height:40em; 
+	margin:0px;
+}
+
+.green{
+	background:green; 
+	flex: 1 1 1px; 
+	height:40em; 
+	margin:0px;
+}
+
+.yellow{
+	background:yellow; 
+	flex: 1 1 1px; 
+	height:40em; 
+	margin:0px;
+	
+}
+
+.star{
+	min-height: 85vh;
+	margin:auto;
+	margin-top: 100px;
+}
+
+
+
+</style>
+
+
+</head>
+
+<body>
+
+<section id="flag">
+<div class="green"></div>
+<div class="yellow">
+	<div class="star">
+		<img src="img/green_star.svg" width="400px" >
+	</div>
+</div>
+<div class="red"></div>
+
+	<script type="text/javascript">
+	$(document).ready(function(){
+    $(".star").click(function(){
+        $("div").animate({
+            left: '250px',
+            height: '+=150px',
+            width: '+=150px'
+	</script>
+
+
+</body>
+</section>
+
+
+</body>
+
+</html>

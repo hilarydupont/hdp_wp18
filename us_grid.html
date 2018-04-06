@@ -15,6 +15,7 @@
 	       grid-template-rows: repeat(13,1fr);
 	       grid-gap: 0px;
 	       z-index: 0;
+	      transition: all 1s ease-out;
 
 		}
 
@@ -72,7 +73,7 @@
 			width: 40px;
 		}
 			
-		@media (max-width: 800px){
+		@media (max-width: 1000px){
 			.flag{
 				margin: 10px;
 				width: 500px;
@@ -92,6 +93,39 @@
 		}
 		.blue{
 			background-color:orange;
+		}
+
+		}	
+				@media (max-width: 500px){
+			.flag{
+				margin: 10px;
+				width: 250px;
+				height:150px;
+			}
+			img{
+				width:10px;
+			}
+		.white{
+			background-color:yellow;
+		}
+		.red{
+			background-color:black;
+		}
+		.rows{
+			background-color:magenta;
+		}
+		.blue{
+			background-color:magenta;
+		}
+
+		.five{
+			display:grid;
+			grid-template-columns: repeat(5, 1fr);
+			grid-template-rows: repeat (9, 1fr);
+		
+        	padding-left:03px;
+        	padding-right: 03px;
+
 		}
 
 		}	
