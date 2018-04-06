@@ -1,0 +1,57 @@
+
+
+html,
+body {
+  background: rgb(203, 145, 255);
+  margin: 0;
+  position: relative;
+}
+
+
+
+.container{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;  
+}
+
+a:link    {
+  /* Applies to all unvisited links */
+  text-decoration:  none;
+}
+
+.project{
+  font-family:"helvetica";
+  font-size: 45px;
+  color:navy;
+  padding: 10px;
+  margin: 10px;
+  border-style: solid;
+  border-radius: 20px;
+  height: 300px;
+  width: 300px;
+  font-weight: 700;
+
+}
+
+.title{
+  font-family: 'helvetica';
+  color:green;
+  padding: 20px;
+  font-size: 45px;
+  margin:0px;
+  font-weight: 700;
+}
+
+ .hovering{
+  font-size: 45px;
+  color:green;
+  background-color: rgb(203, 145, 255);
+  padding: 10px;
+  margin: 10px;
+  border-style: solid;
+  border-radius: 20px;
+ 
+}
+
+
