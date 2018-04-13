@@ -2,37 +2,70 @@
 
 	<head>
 		<title>swing</title>
-		<style>
-		body{
-			margin:0;
-		}
-			section{
-				display: grid;
-				grid-template-columns: 100px 100px 20px 20px;
-				grid-template-rows: 50vh 50vh;
-				width:100%;
-				grid-gap: 20px;
-			}
+		<style> 
 
-			div{
-				background-color: purple;
-				margin: 20px;
-				}
-			
-		</style>
-		<title>
-			
-		</title>
-	</head>
-	<body>
-		<section>
-		<div></div>
-		<div></div>
-		<div></div>
-		<div></div>
-		<div></div>
-		<div></div>
-		<div></div>
-		</section>
+
+	.frame{
+		position: flex-box;
+
+	}	
+
+
+div {
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    background-color: red;
+    position: relative;
+   animation: slidein 3s linear 1s infinite alternate;
+   background-color: red;
+    -webkit-animation-name: colors; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    animation-name: colors;
+    animation-duration: 10s;
+}
+
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 100%; 
+  }
+
+  to {
+    margin-right: 50%;
+    width: 100%;
+  }
+}
+
+@keyframes colors {
+    0%   {background-color: red;}
+    25%  {background-color: yellow;}
+    50%  {background-color: blue;}
+    100% {background-color: green;}
+}
+
+</style>
+</head>
+<body>
+
+<section class="frame">
+
+<div id="div1"></div>
+<div id="div2"></div>
+<div id="div3"></div>
+<div id="div4"></div>
+<div id="div5"></div>
+<div id="div1"></div>
+<div id="div2"></div>
+<div id="div3"></div>
+<div id="div4"></div>
+<div id="div5"></div>
+
+</section>
+
+
+
+</body>
 	</body>
 </html>

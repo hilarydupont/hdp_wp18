@@ -1,0 +1,317 @@
+<html>
+
+	<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<title>animation</title>
+<style>
+
+body{
+  background-color:white;
+  margin:0px;
+}
+
+.frontground{
+  position: absolute;
+  width: 100%;
+  height:100%;
+  z-index: 50;
+  mix-blend-mode: multiply;
+}
+
+.item1 { 
+  background-color: green;
+      -webkit-animation-name: examples; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 5s; /* Safari 4.0 - 8.0 */
+    animation-name: examples;
+    animation-iteration-count: infinite;
+}
+
+.item2 { 
+ background-color: pink;
+
+    -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 6s; /* Safari 4.0 - 8.0 */
+    animation-name: example;
+    animation-iteration-count: infinite;
+}
+
+.item2b { 
+  background-color: rgba(47, 113, 124, .5);
+      -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 3s; /* Safari 4.0 - 8.0 */
+    animation-name: example;
+    animation-iteration-count: infinite;
+}
+
+.item3 { 
+ background-color: purple;
+  -webkit-animation-name: examples; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 5s; /* Safari 4.0 - 8.0 */
+    animation-name: examples;
+    animation-iteration-count: infinite;
+
+}
+
+.item4 { 
+background-color: red;
+    -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    animation-name: example;
+    animation-iteration-count: infinite;
+}
+
+
+/* Standard syntax */
+@keyframes example {
+    0%   {background-color:rgb(244, 194, 66); left:0px; top:0px;}
+   
+    50%  {background-color:rgb(231, 139, 239); left:200px; top:200px;}
+    
+    100% {background-color:rgb(47, 113, 124)); left:0px; top:0px;}
+}
+
+@keyframes examples {
+    
+    0%  {background-color:rgb(244, 194, 66); left:200px; top:200px;}
+    50%   {background-color:rgb(66, 244, 185); left:0px; top:0px;}
+   
+    100% {background-color:rgb(47, 113, 124)); left:0px; top:0px;}
+}
+
+
+.item5 { 
+  background-color: lavender;
+    -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 5.5s; /* Safari 4.0 - 8.0 */
+    animation-name: example;
+    animation-iteration-count: infinite;
+
+}
+
+.item5b { 
+ background-color: lavender;
+  background-color: rgba(10, 255, 140, .5); 
+     -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4.5s; /* Safari 4.0 - 8.0 */
+    animation-name: example;
+    animation-iteration-count: infinite;
+}
+
+.frame {
+   display: flex;  
+  flex-flow: row wrap;
+justify-content: left;
+flex-direction: row-reverse;
+}
+
+div{
+   align-items: stretch;
+  width: 10%;
+   height: 120px;
+}
+
+.box1{
+  position: fixed;
+  top:100px;
+  left:400px;
+  height:600px;
+  width:600px;
+  border-radius: 600px;
+  background-color: rgba(50,255,50);
+  mix-blend-mode: difference;
+  
+}
+
+.box2{
+  position: fixed;
+  top:100px;
+  left:600px;
+  height:600px;
+  width:600px;
+  border-radius: 600px;
+  background-color: rgba(50,255,50);
+  mix-blend-mode: exclusion;
+  
+}
+
+.box3{
+  position: fixed;
+  top:100px;
+  left:200px;
+  height:600px;
+  width:600px;
+  border-radius: 600px;
+  background-color: rgba(50,255,50);
+  mix-blend-mode: exclusion;
+  
+}
+
+</style>
+</head>
+
+<body>
+<section class="frontground">
+  <div class="box1"></div>
+   <div class="box2"></div>
+    <div class="box3"></div>
+</section>
+ 
+<section class="frame">
+  <div class="item1"></div>
+  <div class="item2"></div>
+  <div class="item3"></div>
+  <div class="item4"></div>
+  <div class="item5"></div>
+  <div class="item2b"></div>
+  <div class="item5b"></div>
+    <div class="item1"></div>
+  <div class="item2"></div>
+  <div class="item3"></div>
+  <div class="item4"></div>
+  <div class="item5"></div>
+  <div class="item2b"></div>
+  <div class="item5b"></div>
+    <div class="item1"></div>
+  <div class="item2"></div>
+  <div class="item3"></div>
+  <div class="item4"></div>
+  <div class="item5"></div>
+  <div class="item2b"></div>
+  <div class="item5b"></div>
+    <div class="item1"></div>
+  <div class="item2"></div>
+  <div class="item3"></div>
+  <div class="item4"></div>
+  <div class="item5"></div>
+  <div class="item2b"></div>
+  <div class="item5b"></div>
+    <div class="item1"></div>
+  <div class="item2"></div>
+  <div class="item3"></div>
+  <div class="item4"></div>
+  <div class="item5"></div>
+  <div class="item2b"></div>
+  <div class="item5b"></div>
+    <div class="item1"></div>
+  <div class="item2"></div>
+  <div class="item3"></div>
+  <div class="item4"></div>
+  <div class="item5"></div>
+  <div class="item2b"></div>
+  <div class="item5b"></div>
+    <div class="item1"></div>
+  <div class="item2"></div>
+  <div class="item3"></div>
+  <div class="item4"></div>
+  <div class="item5"></div>
+  <div class="item2b"></div>
+  <div class="item5b"></div>
+    <div class="item1"></div>
+  <div class="item2"></div>
+  <div class="item3"></div>
+  <div class="item4"></div>
+  <div class="item5"></div>
+  <div class="item2b"></div>
+  <div class="item5b"></div>
+    <div class="item1"></div>
+  <div class="item2"></div>
+  <div class="item3"></div>
+  <div class="item4"></div>
+  <div class="item5"></div>
+  <div class="item2b"></div>
+  <div class="item5b"></div>
+    <div class="item1"></div>
+  <div class="item2"></div>
+  <div class="item3"></div>
+  <div class="item4"></div>
+  <div class="item5"></div>
+  <div class="item2b"></div>
+  <div class="item5b"></div>
+  <div class="item1"></div>
+  <div class="item2"></div>
+  <div class="item3"></div>
+  <div class="item4"></div>
+  <div class="item5"></div>
+  <div class="item2b"></div>
+  <div class="item5b"></div>
+    <div class="item1"></div>
+  <div class="item2"></div>
+  <div class="item3"></div>
+  <div class="item4"></div>
+  <div class="item5"></div>
+  <div class="item2b"></div>
+  <div class="item5b"></div>
+    <div class="item1"></div>
+  <div class="item2"></div>
+  <div class="item3"></div>
+  <div class="item4"></div>
+  <div class="item5"></div>
+  <div class="item2b"></div>
+  <div class="item5b"></div>
+    <div class="item1"></div>
+  <div class="item2"></div>
+  <div class="item3"></div>
+  <div class="item4"></div>
+  <div class="item5"></div>
+  <div class="item2b"></div>
+  <div class="item5b"></div>
+    <div class="item1"></div>
+  <div class="item2"></div>
+  <div class="item3"></div>
+  <div class="item4"></div>
+  <div class="item5"></div>
+  <div class="item2b"></div>
+  <div class="item5b"></div>
+    <div class="item1"></div>
+  <div class="item2"></div>
+  <div class="item3"></div>
+  <div class="item4"></div>
+  <div class="item5"></div>
+  <div class="item2b"></div>
+  <div class="item5b"></div>
+    <div class="item1"></div>
+  <div class="item2"></div>
+  <div class="item3"></div>
+  <div class="item4"></div>
+  <div class="item5"></div>
+  <div class="item2b"></div>
+  <div class="item5b"></div>
+    <div class="item1"></div>
+  <div class="item2"></div>
+  <div class="item3"></div>
+  <div class="item4"></div>
+  <div class="item5"></div>
+  <div class="item2b"></div>
+  <div class="item5b"></div>
+    <div class="item1"></div>
+  <div class="item2"></div>
+  <div class="item3"></div>
+  <div class="item4"></div>
+  <div class="item5"></div>
+  <div class="item2b"></div>
+  <div class="item5b"></div>
+    <div class="item1"></div>
+  <div class="item2"></div>
+  <div class="item3"></div>
+  <div class="item4"></div>
+  <div class="item5"></div>
+  <div class="item2b"></div>
+  <div class="item5b"></div>
+</section>
+
+<script> 
+$(document).ready(function(){
+    $(".box1").hover(function(){
+        $(".box1").animate({
+            height: '900px',
+            width: '900px'
+        });
+
+    });
+  
+});
+</script> 
+
+</body>
+	</body>
+</html>
