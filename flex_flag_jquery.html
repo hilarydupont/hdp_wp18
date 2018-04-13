@@ -56,6 +56,7 @@ div{
 </head>
 
 <body>
+	<p>Click the Star!</p>
 
 <section id="flag">
 <div class="green"></div>
@@ -66,14 +67,22 @@ div{
 </div>
 <div class="red"></div>
 
-	<script type="text/javascript">
-	$(document).ready(function(){
+	<script> 
+$(document).ready(function(){
     $(".star").click(function(){
-        $("div").animate({
-            left: '250px',
-            height: '+=150px',
-            width: '+=150px'
-	</script>
+        $(".green").animate({
+            height: 'toggle'
+        });
+
+    });
+    $(".star").click(function(){
+        $(".red").animate({
+            height: 'toggle'
+        });
+        
+    });
+});
+</script> 
 
 
 </body>
