@@ -1,6 +1,6 @@
 
 animation
-*https://hilarydupont.github.io/hdp_wp18/animation.html
+* https://hilarydupont.github.io/hdp_wp18/animation.html
 
 abstract compositions
 * https://hilarydupont.github.io/hdp_wp18/abstract_1.html
